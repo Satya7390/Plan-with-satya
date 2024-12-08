@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.title {
+    font-size: 3rem;
+    margin: 6vh auto;
+    margin-right: -200px;
+    border: 7px dashed rgb(1, 17, 160);
+    border-radius: 20px;
+    padding: 1vh 5vw;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cards {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1300px;
+    margin-left: 15%;
+}
+
+.card {
+    width: 400px;
+    height: fit-content;
+    margin: 1rem;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.image {
+    width: 380px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.tour-info {
+    margin: 20px 5px;
+}
+
+.tour-price {
+    color: #1faa59;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.tour-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.read-more {
+    color: #12b0e8;
+    cursor: pointer;
+}
+
+.description {
+    text-align: justify;
+}
+
+.btn-red {
+    margin-top: 18px;
+    padding: 10px 80px;
+    border: 1px solid #b4161b;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #b4161b21;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.btn-red:hover {
+    background-color: red;
+    color: white;
+    transition: all 0.2s;
+}
+
+
+.refresh {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.endPage {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.btn-white {
+    margin-top: 18px;
+    padding: 10px 80px;
+    /* border: 1px solid rgb(190, 187, 187); */
+}
+
+.btn-white:hover {
+    background-color: rgb(236, 235, 235);
+    color: black;
+    transition: all 0.2s;
+}
+
+
+/* footer section  */
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 2rem;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    background: linear-gradient(45deg, rgba(175, 2, 2, 0.8), rgba(156, 39, 176, 0.8));
+    padding: 20px 30px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0px -1px 5px rgba(255, 255, 255, 0.7);
+    z-index: 10;
+
+}
+
+footer span a {
+    color: #00bcd4;
+    /* Initial color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+footer span a:hover {
+    color: #ff4081;
+    /* Change color on hover */
+}
+
+/* @media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+} */
