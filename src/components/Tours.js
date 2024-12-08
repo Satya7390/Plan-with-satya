@@ -10,7 +10,7 @@ function Tours({tours ,removeTour}) {
             <div className='cards'>
                 {
                     tours.map((tours) => {
-                        return <Card {...tours} removeTour={removeTour}></Card> // cloning by spread operator
+                        return <Card key={tours.id} {...tours} removeTour={removeTour}></Card> // cloning by spread operator
                     })
                 }
             </div>
